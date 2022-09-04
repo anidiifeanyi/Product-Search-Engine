@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --light: #f1faee;
+  --dark: #1d3557;
+  --primary: #a8dadc;
+  --secondary: #457b9d;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--light);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 375px;
+  height: 520px;
+  background: var(--primary);
+  border-radius: 12px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+   display: none;
+}
+
+.container form {
+  top: fixed;
+  width: 100%;
+  border: 2px solid var(--dark);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container form input {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.container form i {
+  padding-left: 10px;
+}
+
+.items-list{
+  padding: 15px 0;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.items img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.items .item-specs {
+  padding-left: 20px;
+}
+
+.items .item-specs h2 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
